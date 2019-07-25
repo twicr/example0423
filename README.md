@@ -36,3 +36,10 @@ function substrCount(str, target) {
 	return count;
 }
 ```
+* 使用match()方法遍历
+```javascript
+function count(str, param) {
+	const reg = new RegExp(param, 'g');
+	return str.match(reg).length;
+}
+```
