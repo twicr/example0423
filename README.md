@@ -20,12 +20,12 @@
 # JS
 ### 统计某一字符或字符串在另一个字符串中出现的次数
 * 使用split()方法
-···javascript
+```javascript
 var num = strParent.split(str).length - 1;
 console.log(num);
-···
+```
 * 使用includes()方法判断
-···javascript
+```javascript
 function substrCount(str, target) {
 	let count = 0;
 	while (str.includes(target)) {
@@ -35,4 +35,4 @@ function substrCount(str, target) {
 	}
 	return count;
 }
-···
+```
