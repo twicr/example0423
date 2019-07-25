@@ -17,3 +17,22 @@
 如果一个DOM元素具有BFC，则外部盒子不会影响内部，内部盒子不会影响外部，最简单的应用：当内部盒子设置浮动时，外部盒子不会被撑开，当外部盒子设置BFC时，则外部盒子可以被撑开。
 
 最简单的BFC：设置浮动
+# JS
+### 统计某一字符或字符串在另一个字符串中出现的次数
+* 使用split()方法
+···javascript
+var num = strParent.split(str).length - 1;
+console.log(num);
+···
+* 使用includes()方法判断
+···javascript
+function substrCount(str, target) {
+	let count = 0;
+	while (str.includes(target)) {
+		const index = str.indexOf(target);
+		count++;
+		str = str.substring(index + target.length);
+	}
+	return count;
+}
+···
