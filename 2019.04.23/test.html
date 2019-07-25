@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>统计某一字符或字符串在另一个字符串中出现的次数</title>
+    <script type="text/javascript" src="jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+    	var str = "a";
+    	var strParent = "askldjasd dsogipopasd kljzkljaiojasd";
+
+    	// var num = strParent.split(str).length - 1;
+    	// console.log(num);
+
+  // 		function substrCount(str, target) {
+		// 	let count = 0;
+		// 	while (str.includes(target)) {
+		// 		 const index = str.indexOf(target);
+		// 		 count++;
+		// 		 str = str.substring(index + target.length);
+		// 	}
+	 // 		return count;
+		// }
+
+		function count(str, param) {
+		  const reg = new RegExp(param, 'g');
+		  return str.match(reg).length;
+		}
+    </script>
+</body>
+
+</html>
